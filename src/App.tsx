@@ -14,8 +14,8 @@ const App = () => {
   const [user, setUser] = useState<User | null>(null);
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [selectedEmployee, setSelectedEmployee] = useState<Employee | null>(null);
-  const [loading, setLoading] = useState<boolean>(true); // for API loading state
-  const [error, setError] = useState<string | null>(null); // for API errors
+  const [_loading, setLoading] = useState<boolean>(true); // for API loading state
+  const [_error, setError] = useState<string | null>(null); // for API errors
 
   useEffect(() => {
     // Load user from localStorage
